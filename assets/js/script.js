@@ -97,6 +97,7 @@ let stats;
 startBtn.addEventListener('click', function (event) {
   quizStatus = true;
   randomizeArray(quizContent);
+  getQuestion(index);
   intro.setAttribute('style', 'display: none;');
   quiz.setAttribute('style', 'display: block;');
   time.textContent = timeLeft;
