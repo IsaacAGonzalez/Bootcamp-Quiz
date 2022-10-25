@@ -85,16 +85,15 @@ header a:hover {
   color: var(--white)
 }
 
-#skipButton {
+#button {
   border: solid 4px var(--black);
   border-radius: 8px;
-  margin: 16px;
   padding: 8px;
   text-align: center;
   background-color: var(--white);
   color: var(--black);
 }
-#skipButton:hover {
+#button:hover {
   background-color: var(--yellow);
   color: var(--white)
 }
@@ -103,5 +102,24 @@ header a:hover {
   margin: 24px;
   font-family: var(--ibm);
   display: none;
+  flex-flow: column nowrap;
   justify-content: center;
+  align-items: center;
+}
+#ending h3 {
+  margin: 8px;
+}
+#ending form {
+  display: flex;
+  margin: 8px;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+}
+#ending input {
+  border: solid 4px var(--black);
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 24px;
+  text-align: center;
+  margin: 16px;
 }

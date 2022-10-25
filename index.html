@@ -13,7 +13,7 @@
 <body>
   <header>
     <ul>
-      <li><a href="">High Scores!</a></li>
+      <li><a href="./highscores.html">High Scores!</a></li>
     </ul>
     <ul>
       <li>Time Left: <span id="time">#</span></li>
@@ -40,8 +40,13 @@
     </section>
 
     <section id="ending">
-      <h3> Congratulations! You finished the quiz!</h3>
-      <p>Your score is: <span id="score">0</span></p>
+      <h3>Quiz complete!</h3>
+      <h3>Your score is: <span id="score">0</span></h3>
+      <form>
+        <label for="user-initials">Enter your initials:</label>
+        <input type="text" id="user-initials" name="user-initials" required/>
+        <button id="button">Submit</button>
+      </form>
     </section>
 
 
