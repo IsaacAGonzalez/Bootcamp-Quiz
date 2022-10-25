@@ -14,8 +14,8 @@ let quizOption4 = document.querySelector('#q4content');
 let ending = document.querySelector('#ending');
 let score = document.querySelector('#score');
 let time = document.querySelector('#time');
-let highscoretable = document.querySelector('#highscore-list');
-let initials = document.querySelector('#user-initials');
+// let highscoretable = document.querySelector('#highscore-list');
+// let initials = document.querySelector('#user-initials');
 
 
 // let scoreList = {
@@ -90,7 +90,7 @@ let scoreValue = 0;
 let index = 0;
 let quizStatus = false;
 let answer = getQuestion(index);
-let timeLeft = 1;
+let timeLeft = 25;
 let choice;
 let stats;
 
@@ -112,9 +112,6 @@ startBtn.addEventListener('click', function (event) {
       quiz.setAttribute('style', 'display: none;');
       ending.setAttribute('style', 'display: flex');
       score.textContent = scoreValue;
-      stats = [initials.textContent, scoreValue];
-      console.log(stats);
-      localStorage.setItem('Score', JSON.stringify(stats));
       return;
     }
   }, 1000)
@@ -147,8 +144,6 @@ function check(choice) {
     quiz.setAttribute('style', 'display: none;');
     ending.setAttribute('style', 'display: flex');
     score.textContent = scoreValue;
-    let userInitials = initials.textContent;
-    console.log(score, userInitials);
     return;
   } else {
     answer = getQuestion(index);
