@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --charcoal: #3E3E40;
+  --grey: #BDBDBF;
+  --white: #F0F0F2;
+  --lightblue: #8aa5ce;
+  --blue: #64758C;
+  --yellow: rgb(194, 180, 55);
+  --black: #0D0D0D;
+  --fira: 'Fira Sans', sans-serif;
+  --ibm: 'IBM Plex Serif', serif;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+  background-color: var(--blue);
+  color: var(--white);
+  font-family: var(--fira);
+}
+
+header {
+  width: 100vw;
+  margin-bottom: 24px;
+  display: flex;
+  background-color: var(--black);
+  color: var(--white);
+  justify-content: space-between;
+  font-family: var(--ibm);
+}
+
+header ul {
+  padding: 12px;
+}
+
+header li {
+  display: inline;
+}
+
+header a {
+  color: var(--grey);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: var(--white);
+}
+
+#quiz {
+  margin: 24px;
+  font-family: var(--ibm);
+  display: none;
+  justify-content: center;
+}
+
+#startButton {
+  margin: 8px;
+  border: solid 4px var(--black);
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+#startButton:hover {
+  background-color: var(--lightblue);
+  color: var(--white)
+}
+
+#quiz ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: solid 4px var(--black);
+  border-radius: 8px;
+  margin: 16px;
+  padding: 8px;
+  text-align: left;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+#quiz ul li:hover {
+  background-color: var(--lightblue);
+  color: var(--white)
+}
+
+#skipButton {
+  border: solid 4px var(--black);
+  border-radius: 8px;
+  margin: 16px;
+  padding: 8px;
+  text-align: center;
+  background-color: var(--white);
+  color: var(--black);
+}
+#skipButton:hover {
+  background-color: var(--yellow);
+  color: var(--white)
+}
+
+#ending {
+  margin: 24px;
+  font-family: var(--ibm);
+  display: none;
+  justify-content: center;
+}

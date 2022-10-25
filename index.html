@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Super Cool Quiz!</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    
+  <header>
+    <ul>
+      <li><a href="">High Scores!</a></li>
+    </ul>
+    <ul>
+      <li>Time Left: <span id="time">#</span></li>
+
+    </ul>
+  </header>
+  <main>
+    <section id="start">
+      <h1>Welcome! Please take the Quiz</h1>
+      <button id="startButton">GO!</button>
+    </section>
+
+    <section id="quiz">
+      <h2>Question:
+        <br><br>
+        <span id="question"></span>
+      </h2>
+      <ul id="options">
+        <li id="q1">A) <span id="q1content"></span></li>
+        <li id="q2">B) <span id="q2content"></span></li>
+        <li id="q3">C) <span id="q3content"></span></li>
+        <li id="q4">D) <span id="q4content"></span></li>
+      </ul>
+    </section>
+
+    <section id="ending">
+      <h3> Congratulations! You finished the quiz!</h3>
+      <p>Your score is: <span id="score">0</span></p>
+    </section>
+
+
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+
 </body>
+
 </html>
